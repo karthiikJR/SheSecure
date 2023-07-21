@@ -27,11 +27,14 @@ import com.example.shesecure.R;
 public class SpeedDetectionService extends Service implements SensorEventListener {
     private SensorManager sensorManager;
     private Sensor accelerometerSensor;
-    private float thresholdSpeed = 0.1f; // Set your desired threshold speed here
+
+    // Set your desired threshold speed here, i.e the speed threshold that triggers the pop-up menu
+    private float thresholdSpeed = 0.1f;
+
+
     private long lastUpdate = 0;
     private float lastX = 0, lastY = 0, lastZ = 0;
-    private static final float ALPHA = 0.8f; // Low-pass filter constant
-    //SharedPreferenceHelper helper = new SharedPreferenceHelper(getApplicationContext());
+    private static final float ALPHA = 0.8f;
 
     @Override
     public void onCreate() {

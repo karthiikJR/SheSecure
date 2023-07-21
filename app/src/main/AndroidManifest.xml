@@ -70,7 +70,7 @@
             android:exported="false" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCtH1vdwn6PLhsHO4Me2mJS2UsybYSt51I" />
+            android:value="YOUR_GMAPS_API_KEY" />
     </application>
 
 </manifest>
